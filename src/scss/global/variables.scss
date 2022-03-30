@@ -1,9 +1,8 @@
 @use 'sass:math';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display&display=swap');
 // Fonts
 $base-font-family: 'Montserrat', sans-serif;
-$heading-font-family: $base-font-family;
+$heading-font-family: 'Playfair Display', serif;
 
 // Font Size
 $base-font-size: 16px;
@@ -39,35 +38,46 @@ $sizes: 8px, 16px, 24px, 32px, 48px, 64px, 120px, 160px, 200px;
 $positions: top, right, bottom, left;
 
 // Colors
-$black: #363636;
+$grey-black: #363636;
+$off-black: #262626;
 $white: #ffffff;
 $off-white: #f3f3f3;
 $light-grey: #d4d4d4;
 $grey: #797979;
 $light-purple: #eacbef;
 $light-pink: #ffa4a4;
+$coral: #f08080;
+$thistle: #d8bfd8;
+$yellow: #fffaa0;
+$mint-green: #9fe2bf;
+$puce: #a95c68;
+$reddish-pink: #fa5f55;
+$bright-blue: #0096ff;
+$slate: #6f8faf;
+$pastel-blue: #89cff0;
+
 $red: #e74c3c;
 $blue: blue;
 
-$links: $black;
-$hover: $black;
+$links: $off-black;
+$hover: $off-black;
 
 // Font Colors
-$base-font-color: $black;
-$action-color: $black;
-$error-color: $black;
+$base-font-color: $off-black;
+$action-color: $off-black;
+$error-color: $off-black;
 
-$base-font-color: $black;
+$base-font-color: $off-black;
 $color-selection: $light-grey;
 
 // Buttons
 $btn-bg-color: transparent;
-$btn-text-color: $black;
+$btn-text-color: $off-black;
 $btn-text-color-hover: $white;
 $btn-border-radius: 0;
 
 // Border
-$base-border-color: $black;
+$base-border-color: $off-black;
 $base-border: 2px solid $base-border-color;
 
 // Background Colors

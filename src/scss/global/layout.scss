@@ -23,6 +23,7 @@ body {
 }
 
 .section {
+  $self: &;
   position: relative;
   width: 100%;
   &__wrapper {
@@ -37,6 +38,19 @@ body {
   }
   &__col {
     flex: 1;
+    padding: 0 $spacing-16;
+    position: relative;
+    // z-index: 1;
+  }
+  // Fullscreen Sections
+  &--fullscreen {
+    @extend .section;
+    overflow: hidden;
+    height: calc(100vh - 50px);
+    #{$self}__wrapper,
+    #{$self}__row {
+      height: 100%;
+    }
   }
 }
 
@@ -88,19 +102,6 @@ body {
     }
   }
 }
-
-// ********************* GRID ********************** //
-// .grid {
-//   @for $i from 1 through 5 {
-//     &--#{$grid-space * $i} {
-//       grid-template-columns: repeat(auto-fill, minmax($grid-space * $i, 1fr));
-//       grid-template-rows: repeat(auto-fill, minmax($grid-space * $i, 1fr));
-//     }
-//   }
-//   &--column {
-//     grid-auto-flow: column;
-//   }
-// }
 
 // ********************* LAYOUT MODIFIERS ********************** //
 .padding {

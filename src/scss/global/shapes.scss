@@ -1,0 +1,35 @@
+@use './variables.scss' as *;
+@use './mixins.scss' as *;
+
+.circle {
+  @include circle;
+  // Circle Size
+  &--full {
+    @include circle;
+  }
+  &--oversized {
+    @include circle(120%);
+  }
+  &--giant {
+    @include circle(150%);
+  }
+  // Circle Colors
+  &--yellow {
+    background: $yellow;
+  }
+  &--coral {
+    background: $coral;
+  }
+}
+
+// Individual Circles
+.circle {
+  &--1 {
+    right: 36%;
+    top: -50%;
+  }
+  &--2 {
+    right: -90%;
+    top: 75%;
+  }
+}

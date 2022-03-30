@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project Title</title>
+    <title>Birbs</title>
+    <script
+      src="https://kit.fontawesome.com/d2d9bdc7cf.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
       <div class="header__wrapper">
         <div class="header__row">
           <div class="header__col">
-            <a href="/" class="logo">
-              <img
-                src="<%=require('../../images/placeholder-logo.svg')%>"
-                alt="Logo"
-                class="logo__image"
-              />
-            </a>
+            <a href="/" class="logo-title h4">Birbs of Kentucky</a>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section--fullscreen">
         <div class="section__wrapper">
           <div class="section__row">
             <div class="section__col">
-              <h1>Project Title</h1>
-            </div>
-            <div class="section__col">
+              <div class="circle--yellow circle--giant circle--1"></div>
               <img
                 class="image--contain"
-                src="<%=require('../../images/folder.svg')%>"
-                alt="folder"
+                src="<%=require('../../images/1_chipping-sparrow.svg')%>"
+                alt="Chipping Sparrow"
               />
+            </div>
+            <div class="section__col">
+              <div class="circle--coral circle--giant circle--2"></div>
+              <h1>Birb of the Week:</h1>
+              <h2>Chipping Sparrow</h2>
+              <div class="buttons">
+                <a href="#" class="button button--primary">Who is She?</a>
+              </div>
             </div>
           </div>
         </div>
@@ -41,13 +45,7 @@
       <div class="footer__wrapper">
         <div class="footer__row">
           <div class="footer__col">
-            <a href="/" class="logo">
-              <img
-                src="<%=require('../../images/placeholder-logo.svg')%>"
-                alt="Home"
-                class="logo__image"
-              />
-            </a>
+            <a href="/" class="logo"> </a>
           </div>
         </div>
       </div>
